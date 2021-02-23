@@ -1,0 +1,41 @@
+import moteus
+c = moteus.Controller()
+await c.set_stop()
+await c.set_postion()
+await Controller.query()
+
+
+faire tourner moteur à une x vitesse, une x velocite et la maintenir à une x force
+----------------------------------------------------------------------------
+d pos nan 0.5 0.5 s0.5    ///////dans interpretur tview
+print(await c.set_position(position=math.nan, velocity=0.2, maximum_torque=0.3, stop_position=1, query=True))     //////dans console python fonctionne easy!
+
+
+
+
+commande pour faire un "wall"
+------------------------------
+d within -0.5 0.5 0.5
+
+
+
+commande pour debloquer rotation continue et lancer rotation 
+-----------------------------------------
+conf set servopos.position_min nan
+conf set servopos.position_max nan
+lancer rotation 
+---------------
+d pos nan 1 0.5
+
+
+stop 
+-----
+d stop
+
+
+
+mettre en variable velocite force vitesse pour slider et graph.
+
+
+
+https://gum.co/pysqtsamples
